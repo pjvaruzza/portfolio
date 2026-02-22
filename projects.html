@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Patrick Varuzza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ====== NAVIGATION ====== -->
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="logo-text">PV</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ====== PROJECTS ====== -->
+<section id="projects">
+    <div class="container">
+
+        <div class="projects-header">
+            <h1 class="section-title">Projects</h1>
+            <p class="projects-intro">Work at the intersection of engineering, policy, and entrepreneurship.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- ── Card 1: Southern California Edison ── -->
+            <article class="project-card" data-modal="modal-sce" tabindex="0" role="button" aria-label="Open Southern California Edison project details">
+                <div class="card-tag">Utility &middot; Grid</div>
+                <h2 class="card-title">Southern California Edison</h2>
+                <p class="card-role">Distribution Engineer &middot; DER Integration</p>
+                <p class="card-summary">
+                    Supporting grid modernization at one of the largest IOUs in the US,
+                    enabling DER integration aligned with California's High DER Future Grid
+                    Proceeding and SCE's "Countdown to 2045" climate targets.
+                </p>
+                <div class="card-metrics">
+                    <div class="metric">
+                        <span class="metric-value">15M</span>
+                        <span class="metric-label">customers served</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">50K</span>
+                        <span class="metric-label">sq mi territory</span>
+                    </div>
+                </div>
+                <button class="card-cta">View Details</button>
+            </article>
+
+            <!-- ── Card 2: Hubbub ── -->
+            <article class="project-card" data-modal="modal-hubbub" tabindex="0" role="button" aria-label="Open Hubbub project details">
+                <div class="card-tag">Startup &middot; Founder</div>
+                <h2 class="card-title">Hubbub</h2>
+                <p class="card-role">Founder &middot; Circular Economy Platform</p>
+                <p class="card-summary">
+                    Founded a circular economy rental platform at Columbia University, serving
+                    400+ users per month and diverting 210 tonnes of consumer goods from landfill —
+                    backed by a startup incubator.
+                </p>
+                <div class="card-metrics">
+                    <div class="metric">
+                        <span class="metric-value">288%</span>
+                        <span class="metric-label">YoY revenue growth</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">1,320t</span>
+                        <span class="metric-label">CO₂e avoided</span>
+                    </div>
+                </div>
+                <button class="card-cta">View Details</button>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Patrick Varuzza</p>
+    </div>
+</footer>
+
+<!-- ====== MODAL OVERLAY ====== -->
+<div class="modal-overlay" id="modal-overlay"></div>
+
+<!-- ====== MODAL: Southern California Edison ====== -->
+<div class="modal" id="modal-sce" role="dialog" aria-modal="true" aria-labelledby="sce-title">
+    <div class="modal-inner">
+        <button class="modal-close" aria-label="Close dialog">&times;</button>
+        <div class="modal-tag">Utility &middot; Grid</div>
+        <h2 class="modal-title" id="sce-title">Southern California Edison</h2>
+        <p class="modal-role">Distribution Engineer &middot; DER Integration &middot; 2022 – Present</p>
+
+        <div class="modal-section">
+            <h3>Background</h3>
+            <p>
+                Southern California Edison (SCE) is one of the largest investor-owned utilities in the US,
+                supplying electricity to 15 million people across a 50,000 sq mi service territory.
+                As a Distribution Engineer, my role focuses on accelerating the integration of Distributed
+                Energy Resources (DERs) onto the grid, aligned with the California Public Utility Commission
+                (CPUC) High DER Future Grid Proceeding. I have built a deep understanding of how the utility
+                industry is responding to unprecedented load growth and grid decarbonization challenges.
+            </p>
+        </div>
+
+        <div class="modal-section">
+            <h3>Key Contributions</h3>
+            <ul class="modal-list">
+                <li>Distribution grid planning and engineering for DER interconnection at scale</li>
+                <li>Non-wires alternatives cost-benefit analysis to defer traditional infrastructure upgrades</li>
+                <li>Data analysis and process automation to improve planning workflows</li>
+                <li>CPUC regulatory compliance and High DER Future Grid proceeding support</li>
+                <li>Supporting SCE's "Countdown to 2045" climate targets and enabling statewide electrification</li>
+                <li>Cross-functional collaboration with rates, policy, and operations teams</li>
+            </ul>
+        </div>
+
+        <div class="modal-section">
+            <h3>Skills Applied</h3>
+            <ul class="modal-list">
+                <li>Distribution grid planning &amp; engineering</li>
+                <li>Non-wires alternatives &amp; cost-benefit analysis</li>
+                <li>Project management &amp; data automation</li>
+                <li>CPUC regulatory compliance</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ====== MODAL: Hubbub ====== -->
+<div class="modal" id="modal-hubbub" role="dialog" aria-modal="true" aria-labelledby="hubbub-title">
+    <div class="modal-inner">
+        <button class="modal-close" aria-label="Close dialog">&times;</button>
+        <div class="modal-tag">Startup &middot; Founder</div>
+        <h2 class="modal-title" id="hubbub-title">Hubbub</h2>
+        <p class="modal-role">Founder &middot; Circular Economy Platform &middot; 2020 – 2022</p>
+
+        <div class="modal-section">
+            <h3>Background</h3>
+            <p>
+                Hubbub.shop is a circular economy startup that makes it cheaper, more convenient, and
+                more enjoyable for consumers to rent everyday items instead of buying new. I launched it
+                during my undergrad at Columbia University, frustrated by the environmental destruction
+                caused by the massive volumes of consumer waste sent to landfill each year. In January 2020,
+                I recruited co-founders united by a vision to scale a circular economic model keeping
+                resources and materials out of landfill.
+            </p>
+        </div>
+
+        <div class="modal-section">
+            <h3>Key Results</h3>
+            <ul class="modal-list">
+                <li>Navigated the pre-seed fundraising process, securing capital from a startup incubator to scale NYC operations</li>
+                <li>Served 400+ users per month with year-over-year revenue growth of 288%</li>
+                <li>Kept 210 tonnes of items out of landfill, embodying an estimated 1,320 tonnes of CO₂e avoided</li>
+                <li>Developed a strong unit economics model using micro-fulfillment hubs near target users to minimize delivery costs</li>
+                <li>Built data analytics and logistics tools to forecast demand patterns and automate rental order completion</li>
+                <li>Led rapid product iteration through weekly interviews with dozens of target customers</li>
+                <li>Assembled a cross-functional team covering tech development and operations as we expanded across New York City</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ====== MODAL JAVASCRIPT ====== -->
+<script>
+(function () {
+    const overlay = document.getElementById('modal-overlay');
+    const cards = document.querySelectorAll('.project-card');
+    const closeBtns = document.querySelectorAll('.modal-close');
+    let currentModal = null;
+
+    function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (!modal) return;
+        currentModal = modal;
+        overlay.classList.add('active');
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Focus the close button for accessibility
+        const closeBtn = modal.querySelector('.modal-close');
+        if (closeBtn) closeBtn.focus();
+    }
+
+    function closeModal() {
+        if (!currentModal) return;
+        currentModal.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        currentModal = null;
+    }
+
+    // Open modal when card is clicked (anywhere on the card)
+    cards.forEach(card => {
+        card.addEventListener('click', function (e) {
+            // Prevent double-fire if the CTA button is inside the card
+            const modalId = this.getAttribute('data-modal');
+            openModal(modalId);
+        });
+
+        // Keyboard accessibility — open on Enter or Space
+        card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                const modalId = this.getAttribute('data-modal');
+                openModal(modalId);
+            }
+        });
+    });
+
+    // Close via × button
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeModal();
+        });
+    });
+
+    // Close via overlay click
+    overlay.addEventListener('click', closeModal);
+
+    // Close via Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && currentModal) closeModal();
+    });
+})();
+</script>
+
+</body>
+</html>

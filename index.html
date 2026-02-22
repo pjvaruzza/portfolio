@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Varuzza — Climate & Energy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ====== NAVIGATION ====== -->
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="logo-text">PV</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-eyebrow">Climate &amp; Energy</span>
+            <h1>Hi, I'm <span class="accent">Patrick</span></h1>
+            <p class="hero-sub">
+                Engineer, founder, and climate advocate based in Los Angeles, CA —
+                urgently working to accelerate gigaton-scale reductions in global carbon emissions.
+            </p>
+            <div class="hero-actions">
+                <a href="projects.html" class="btn-primary">View My Work</a>
+                <a href="#about" class="btn-secondary">About Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== ABOUT ====== -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+
+            <div class="about-photo">
+                <img src="images/IMG_9887.jpg" alt="Patrick Varuzza" />
+            </div>
+
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-bio">
+                    I am a curiosity-driven individual, urgently working to accelerate
+                    gigaton-scale reductions in global carbon emissions. Through my career
+                    so far, I have leveraged my background in engineering, policy, and
+                    entrepreneurship to build a nuanced understanding of the climate crisis
+                    and the challenges of scaling clean energy systems, low-carbon fuels,
+                    industrial decarbonization, and circular supply chains. I bring this drive
+                    along with my research and analysis skills, experience with financial and
+                    techno-economic modeling, and passion for the world of startups to my
+                    mission of tackling climate change.
+                </p>
+
+                <p class="subsection-label">Education</p>
+                <div class="education-list">
+
+                    <div class="education-item">
+                        <span class="edu-years">2020 – 2022</span>
+                        <div class="edu-detail">
+                            <strong>New York University, Tandon School of Engineering</strong>
+                            <p>M.S. in Mechanical Engineering — Energy Engineering &amp; Policy &middot; GPA 3.8 / 4.0</p>
+                            <p class="edu-courses">Energy Conversion Systems &middot; Data Visualization &middot; Energy Project Financing &middot; Energy Policy &amp; Regulations</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <span class="edu-years">2016 – 2020</span>
+                        <div class="edu-detail">
+                            <strong>Columbia University, School of Engineering and Applied Science</strong>
+                            <p>B.S. in Chemical Engineering &middot; GPA 3.5 / 4.0</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-intro">Open to conversations about climate, energy, and startups.</p>
+        <div class="contact-links">
+            <a href="mailto:pjvaruzza@gmail.com" class="contact-link">
+                <span class="contact-label">Email</span>
+                pjvaruzza@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/patrick-varuzza/" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-label">LinkedIn</span>
+                linkedin.com/in/patrick-varuzza
+            </a>
+            <a href="https://twitter.com/PV_on_Earth" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-label">Twitter</span>
+                @PV_on_Earth
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Patrick Varuzza</p>
+    </div>
+</footer>
+
+<!-- Smooth scrolling for anchor links -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
