@@ -5,6 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patrick Varuzza — Climate & Energy</title>
+    <meta name="description" content="Grid innovation product lead, past-founder, and climate techno-optimist urgently working to accelerate gigaton-scale reductions in global carbon emissions." />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Patrick Varuzza — Climate & Energy" />
+    <meta property="og:description" content="Grid innovation product lead, past-founder, and climate techno-optimist urgently working to accelerate gigaton-scale reductions in global carbon emissions." />
+    <meta property="og:image" content="images/IMG_9887.jpg" /><!-- use absolute URL when deployed -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@PV_on_Earth" />
+    <meta name="twitter:title" content="Patrick Varuzza — Climate & Energy" />
+    <meta name="twitter:description" content="Grid innovation product lead, past-founder, and climate techno-optimist urgently working to accelerate gigaton-scale reductions in global carbon emissions." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,6 +28,11 @@
 <nav>
     <div class="nav-inner">
         <a href="index.html" class="logo-text">PV</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -33,7 +49,7 @@
             <span class="hero-eyebrow">Climate &amp; Energy</span>
             <h1>Hi, I'm <span class="accent">Patrick</span></h1>
             <p class="hero-sub">
-                Engineer, founder, and climate advocate based in Los Angeles, CA —
+                Grid innovation product lead, past-founder, and climate techno-optimist based in Berkeley, CA —
                 urgently working to accelerate gigaton-scale reductions in global carbon emissions.
             </p>
             <div class="hero-actions">
@@ -119,7 +135,7 @@
 <!-- ====== FOOTER ====== -->
 <footer>
     <div class="container">
-        <p>&copy; 2024 Patrick Varuzza</p>
+        <p>&copy; 2026 Patrick Varuzza</p>
     </div>
 </footer>
 
@@ -132,6 +148,21 @@
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
+        });
+    });
+
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('nav ul');
+    navToggle.addEventListener('click', () => {
+        const open = navList.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open);
+    });
+    // Close nav when a link is clicked
+    navList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 </script>
